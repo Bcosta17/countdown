@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+  --black: #4D4C59;
+  --purple: #6C63FF;
+	--light-grey: #C8C8C8;
+  --text-color: #9C9AB6;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: 
+    "topImage topImage topImage topImage"
+    " . main sideImage ."
+    "bottonImage bottonImage bottonImage bottonImage"
+  ;
+  gap: 0 6rem;
+  grid-template-columns: 20rem 1fr 1fr;
+  grid-template-rows: 20% 50% 30%;
+}
+
+.top_image {
+  grid-area:topImage;
+  
+  width: 100%;
+}
+
+.side_image {
+  grid-area:sideImage;
+
+  width: 60rem;
+}
+
+.botton_image {
+  grid-area:bottonImage;
+  
+  width: 100%;
+}
+
+.cotent {
+  grid-area:main;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.cotent h1 {
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: var(--purple);
+  margin-bottom: 2rem;
+}
+
+.countdown {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.countdown_time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown_time .name,.subscribe p {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.countdown_time .number, .countdown .separete {
+  font-size: 6rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.countdown .separete{
+  margin-top: 1rem;
+}
+
+.subscribe{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.subscribe button {
+  width: 16rem;
+  height: 4.6rem;
+
+  border-radius: 1rem;
+  border: none;
+  color: #FFF;
+  background-color: var(--purple);
+
+  margin-top: 3rem;
+}
