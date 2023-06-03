@@ -48,6 +48,7 @@ body {
 
 .cotent {
   grid-area:main;
+ 
 
   display: flex;
   flex-direction: column;
@@ -113,4 +114,83 @@ body {
   font-size: 1.4rem;
   font-weight: 400;
   margin-top: 3rem;
+}
+/* ================ Modal =============== */
+
+.modal {
+  position: absolute;
+  border: solid;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0,0 , 0.3) ;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.modal_cotent {
+  position: relative;
+  width: 25%;
+  height: 50%;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #FFF;
+  
+}
+
+.modal_cotent .element_form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.modal_cotent .element_form input{
+  height: 3.5rem;
+  border-radius: .4rem;
+  border: solid 2px #E7E9E9;
+  margin-top: 1rem;
+}
+
+.element_form label {
+  font-size: 1.4rem;
+  color: var(--purple);
+}
+
+.modal_cotent .register {
+  width: 60%;
+  height: 4rem;
+  border-radius: .5rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: var(--purple);
+  color: #FFF;
+  font-size: 1.4rem;
+  font-weight: 400;
+  border: none;
+}
+
+.close_modal {
+  background: transparent;
+  border: none;
+
+  font-size: 2rem;
+
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+
+}
+input:focus {
+  outline-color: var(--purple);
+}
+
+.invisible {
+  display: none;
 }

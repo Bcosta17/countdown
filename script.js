@@ -31,3 +31,8 @@ setInterval(() => {
   hoursEl.textContent = hours.toString().padStart(2, '0');
 
 }, 1);
+
+function toggleVisibilityOfModal() {
+  const modal = document.querySelector('.modal');
+  modal.classList.toggle('invisible')
+}

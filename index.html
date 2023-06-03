@@ -39,7 +39,24 @@
       </div>
     <div class="subscribe">
       <p>Inscreva-se para saber mais sobre o lançamento</p>
-      <button>Inscreva-se</button>
+      <button onclick="toggleVisibilityOfModal()">Inscreva-se</button>
+    </div>
+
+    <div class="modal invisible">
+     <div class="modal_cotent">
+      <button class="close_modal" onclick="toggleVisibilityOfModal()">x</button>
+      <form>
+        <div class="element_form">
+          <label for="name">Nome</label>
+          <input type="text" id="name">
+        </div>
+        <div class="element_form">
+          <label for="email">E-mail</label>
+          <input type="text" id="email">
+        </div>
+        <button class="register" onclick="toggleVisibilityOfModal()">Cadastrar</button>
+      </form>      
+     </div>
     </div>
   </div>
   <img src="./assets/rocket.svg" alt="" class="side_image">
